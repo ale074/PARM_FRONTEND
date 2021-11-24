@@ -5,15 +5,15 @@
             <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
                     class="fas fa-notes-medical me-2"></i>PARM</div>
             <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                <a routerLink="/usuarios/dashboard" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                         class="fas fa-home me-2"></i>Inicio</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="#" onclick="return false;" (click)="OpenDialog('openAddService', {});" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-project-diagram me-2"></i>Añadir Servicio</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="#" onclick="return false;" (click)="OpenDialog('openUpdateService', {});" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-edit me-2"></i>Editar Servicio</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="#" onclick="return false;" (click)="OpenDialog('openAddAlert', {});" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-bullhorn me-2"></i>Crear Alerta</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="#" onclick="return false;" (click)="OpenDialog('openUpdateAlert', {});" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-edit me-2"></i>Editar Alerta</a>
                 <!-- <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-gift me-2"></i>pagina 51</a>
@@ -21,7 +21,7 @@
                         class="fas fa-comment-dots me-2"></i>pagina 6</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-map-marker-alt me-2"></i>pagina 7</a> -->
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                <a routerLink="/usuarios/login" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>

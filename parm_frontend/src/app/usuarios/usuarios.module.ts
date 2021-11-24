@@ -5,6 +5,8 @@ import { LoginComponent } from './components/login/login.component';
 import { UsuariosRoutingModule } from './usuarios-routing.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     UsuariosRoutingModule,
-    RouterModule
+    RouterModule,
+    MatDialogModule
   ]
 })
 export class UsuariosModule { }
